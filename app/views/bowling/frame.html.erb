@@ -1,0 +1,60 @@
+<%= form_for '/bowling/frame' do %>
+<h1 class="topic">Bowling Game</h1>
+
+<div class="content1">
+<table>
+  <tr>
+    <th>Bowlling <br/></th>
+    <th>Score &nbsp</th>
+    <th><br/></th>
+    <th> 	
+    	<tr>   	
+    	
+  <td>
+    <%= label :title1, '1st Throw', id: 'label1' %><br>    
+  </td>
+  <td><%= input :chance1, ''  %></td>
+  </tr>
+  <tr>
+ <td>
+    <%= label :title2 , '2nd Throw', id: 'label2' %><br>    
+  </td>
+  <td><%= input :chance2, '' %></td>
+  </tr>
+  <tr> 
+  <td>
+    
+    <%= submit_tag 'Next Game', id: 'sub'%>
+  </td>
+
+</tr>
+    </th>
+    <th>
+    	<td></td>   	
+    	
+    </th>
+</table>
+</div>
+<% end %>
+
+<table id="results" border="1">
+	
+	<h4><u>Score Board</u></h4>
+  <tr>
+    <td class="header">Frame:</td>
+    <%== titles %>
+    <td class="total">
+      TOTAL
+    </td>
+  </tr>
+  <tr>
+    <td class="header">Score:</td>
+    <%== scores%>
+    <td >
+      <%= @bowling.total %>
+      
+    </td>
+  </tr>
+</table>
+
+

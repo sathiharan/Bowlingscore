@@ -1,0 +1,66 @@
+// Place all the styles related to the bowling controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div#content {
+  margin-left: 100px;
+  .flash {
+   width: 300px;
+   padding: 30px;
+   margin: 20px;
+  }
+  .content1 {
+  margin-left: 400px;
+  }
+  .topic {
+    border: 5px solid #ff0000; 
+    width: 95%;
+    margin: 1em 0;
+    padding: .5em;
+
+    background-image: -ms-radial-gradient(left top, circle farthest-corner, #F07E1A 0%, #F58CCB 100%);
+    background-image: -moz-radial-gradient(left top, circle farthest-corner, #F07E1A 0%, #F58CCB 100%);
+    background-image: -o-radial-gradient(left top, circle farthest-corner, #F07E1A 0%, #F58CCB 100%);
+    background-image: -webkit-gradient(radial, left top, 0, left top, 1012, color-stop(0, #F07E1A), color-stop(1, #F58CCB));
+    background-image: -webkit-radial-gradient(left top, circle farthest-corner, #F07E1A 0%, #F58CCB 100%);
+    background-image: radial-gradient(circle farthest-corner at left top, #F07E1A 0%, #F58CCB 100%);
+
+    text-align: center;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    border-radius:4px;    
+  }
+  
+  #error {
+     
+    font-size:16px;
+    font-weight:bold;
+    color: #990000;
+       
+  }
+  #notice {
+    border: 5px solid #0000ff;
+    
+  }
+    
+  #results {
+    margin: 10px 0 10px 0px;
+    .header {
+      font-family: 'Tangerine', serif ;
+      font-style: italic;
+      font-style: bold;      
+      width: 100px;           
+      
+    }
+    td {
+      width: 20px;
+      text-align: left;
+      padding: 10px;
+    }
+    .total {
+      font-weight: bold;
+      color: #1100ff;
+    }
+  }
+  
+}
